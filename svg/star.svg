@@ -1,0 +1,18 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 10'>
+  	<circle cx="9" cy="1" r=".4"></circle>
+  	<circle cx="10" cy="8" r=".5"></circle>
+  	<circle cx="12" cy="3" r=".2"></circle>
+  	<circle cx="13" cy="5" r=".3"></circle>
+  	<circle cx="14" cy="9" r=".3"></circle>
+  	<circle cx="15" cy="1" r=".4"></circle>
+  	<circle cx="17" cy="7" r=".4"></circle>
+  	<circle cx="18" cy="5" r=".5"></circle>
+    <path style="fill: #fff; stroke-width: 0.1px;" d="M 19.19 -0.612 L 20.257 -1.78 L 19.757 -0.279 C 19.77 -0.283 19.088 0.263 19.19 -0.612 Z">
+        <animateTransform id="star" attributeName="transform" values="0,0;-14,20" dur="1s" repeatCount="1" begin="0s;star.end+3s"/>
+    </path>
+    <style>
+        circle{
+            fill:#fff;
+        }
+    </style>
+</svg>

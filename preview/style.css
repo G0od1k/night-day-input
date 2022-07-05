@@ -1,0 +1,57 @@
+body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+body > div:nth-child(1) {
+    color: white;
+    background-color: #000;
+    font-family: sans-serif;
+}
+
+body > div {
+    height: 100vh;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+body > div > div {
+    width: 50vw;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+body > div > div {
+    font-size: 64px;
+}
+
+body > div > div:nth-child(2) {
+    font-size: 96px;
+}
+
+body > div > div input {
+    font-size: 1em;
+    transform: translateX(-50%);
+}
+
+body > div > div label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 0.6em;
+
+    width: 60%;
+}

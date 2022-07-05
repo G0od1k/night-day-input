@@ -1,0 +1,99 @@
+@box-shadow: 0 0 0.2em 0.2em;
+@border-radius: 1em 1em;
+
+input[type="checkbox"].night-day-switch {
+    position: relative;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    width: 1em;
+    height: 1em;
+
+    &:checked {
+        &::after {
+            background-color: #9fe3fc;
+            border-color: #88c2d8;
+            background-image: url(../svg/cloud.svg);
+        }
+
+        &::before {
+            left: 0.925em;
+            background-color: #ffdf6e;
+            background-image: url("../svg/void.svg");
+            border-color: #e0c447;
+        }
+
+        &:focus::before {
+            box-shadow: @box-shadow #ffdf6e;
+        }
+
+        &:disabled {
+            &::after {
+                background-color: #383529;
+                border-color: #4a473a;
+                background-image: url();
+            }
+
+            &::before {
+                border-color: #ffe58b;
+                background-color: #000;
+                background-image: url("../svg/void.svg");
+            }
+        }
+    }
+
+    &:focus::before {
+        box-shadow: @box-shadow #ddddff;
+    }
+
+    &:disabled {
+        &::after {
+            background-color: #632b58;
+            border-color: #7a3a64;
+            background-image: url();
+            // -3% 7%
+        }
+
+        &::before {
+            background-color: #bf3a55;
+            background-image: url("../svg/blood_moon.svg");
+            border-color: #d64b4b;
+        }
+    }
+
+    &::after {
+        content: "";
+        border-radius: @border-radius;
+        display: block;
+        width: 1.6em;
+        height: 0.8em;
+        border: solid 0.1em;
+        transition: 0.4s;
+
+        background-color: #3d4043;
+        border-color: #1b1c1e;
+        background-image: url(../svg/star.svg);
+    }
+
+    &::before {
+        content: "";
+        border-radius: @border-radius;
+        display: block;
+        width: 0.55em;
+        height: 0.55em;
+        border: solid 0.1em;
+        position: absolute;
+        transition: 0.4s;
+        top: 0.125em;
+        left: 0.125em;
+
+        background-color: #fff;
+        background-image: url("../svg/moon.svg");
+        border-color: #e3e7c7;
+    }
+
+    &:focus-visible {
+        outline: none;
+    }
+}

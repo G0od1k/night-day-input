@@ -1,0 +1,31 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 10'>
+    <defs>
+    <symbol id="cloud">
+        <circle cx="5" cy="7.5" r="1"></circle>
+        <circle cx="9" cy="7.5" r="1"></circle>
+        <circle cx="8" cy="7.3" r="1.25"></circle>
+        <circle cx="6.5" cy="7" r="1.5"></circle>
+    </symbol>
+    </defs>
+  	<use href="#cloud" x="0" y="0">
+  	<animateTransform attributeName="transform" values="0,0;20,0" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;0;0;0;0;0;0" dur="5s" repeatCount="indefinite"/>
+    </use>
+    <use href="#cloud" x="0" y="0">
+  	<animateTransform attributeName="transform" values="-5,-4;15,-4" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;1;0;0;0;0;0" dur="5s" repeatCount="indefinite"/>
+    </use>
+    <use href="#cloud" x="0" y="0">
+  	<animateTransform attributeName="transform" values="-20,0;0,0" dur="5s" repeatCount="indefinite"/>
+    </use>
+    <use href="#cloud" x="0" y="0">
+  	<animateTransform attributeName="transform" values="-25,-4;-5,-4" dur="5s" repeatCount="indefinite"/>
+    </use>
+    <style>
+        #cloud{
+            stroke-width:.5;
+            stroke:#eee;
+            fill:#fff;
+        }
+    </style>
+</svg>
