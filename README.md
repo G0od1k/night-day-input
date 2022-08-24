@@ -1,4 +1,8 @@
-# Night-Day Inputs
+# Night-Day Input
+
+CSS library for stylizing html input.
+
+## Preview
 
 ![Preview](./preview/img/toggle.png)
 
@@ -6,7 +10,7 @@
 
 ```
 <head>
-    <link rel="stylesheet" href="https://rawgit.com/g0od1k/night-day-input/build/check.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/night-day-input" />
 </head>
 <body>
     <input type="checkbox" class="night-day-switch">
@@ -15,7 +19,7 @@
 
 ## Available Input Types
 
-- [x] Checkbox
-- [ ] Switch
+- [ ] Checkbox
+- [x] Switch
 - [ ] Radio
 - [ ] Text
